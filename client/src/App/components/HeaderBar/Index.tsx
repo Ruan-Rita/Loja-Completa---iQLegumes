@@ -7,8 +7,8 @@ const HeaderBar : React.FC = () =>{
                 <li className='logo'><a href="/" >Home</a></li>
                 <div>
                     <li><a href="/perfil" >Perfil</a></li>
-                    <li><a href="/perfil" >Cadastrar</a></li>
-                    <li><a href="/perfil" >Login</a></li>
+                    <li><a href="/registrar" >Cadastrar</a></li>
+                    <li><a href="/entrar" >Login</a></li>
                 </div>
             </ul>
         </Container>

@@ -27,7 +27,7 @@ export const Image = styled.div`
         }
         h3 {
             font-size: 2rem;
-            color: greenyellow;
+            color: #f5ff56;
             font-weight: bold;
         }
         

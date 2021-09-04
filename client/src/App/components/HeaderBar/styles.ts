@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.nav`
     width: 100%;
-    background-color: #6AF05D;
+    background-color: #44883c;
     ul {
         max-width: 1000px;
         list-style: none;
@@ -38,12 +38,21 @@ export const Container = styled.nav`
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                transition: all .3s ease-in-out;
+                position: relative;
                 a{
                     padding: 0px 5px;
                     text-align: center;
+                    font-weight: bold;
+
                 }
                 &:hover{
-                    background-color: red;
+                    filter: brightness(.9);
+                    transform: scale(1.1);
+                    background-color: #f5ff56;
+                    a {
+                        color: #44883c;
+                    }
                 }
             }
                 
