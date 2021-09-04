@@ -5,7 +5,7 @@ import ProfilePage from "./pages/ProfilPage";
 
 const Routes : React.FC = () => (
     <BrowserRouter>
-        <Switch>
+        <Switch >
             <Route path="/" exact component={HomePage} />
             <Route path="/perfil" exact component={ProfilePage} />
         </Switch>

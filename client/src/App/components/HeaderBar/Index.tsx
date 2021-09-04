@@ -1,13 +1,15 @@
 import React from "react";
 import { Container } from "./styles";
-const HomePage : React.FC = () =>{
+const HeaderBar : React.FC = () =>{
     return (
         <Container>
-            <li><a href="/" >Home</a></li>
-            <li><a href="/perfil" >Perfil</a></li>
+            <ul>
+                <li className='logo'><a href="/" >Home</a></li>
+                <li><a href="/perfil" >Perfil</a></li>
+            </ul>
         </Container>
-    );
+    )
 }
 
-export default HomePage; 
+export default HeaderBar;
 

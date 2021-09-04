@@ -1,4 +1,14 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    background-color: #E7EFC5;
 }
