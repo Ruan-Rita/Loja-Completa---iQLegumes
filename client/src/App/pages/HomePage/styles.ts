@@ -1,32 +1,69 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background: red;
-    width: 1000px;
-    margin: 0px auto;
+
 `
 export const Image = styled.div`
     max-width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 
     .path{
-        position: absolute;
-        top: 0px;
         max-height: 400px;
-
         display: block;
         width: 100%;
         object-fit: cover;
-        filter: brightness(.5);
     }
     .title {
-        top: 50%;
         position: absolute;
-        font-size: 2rem;
-        color: white;
-        background-color: antiquewhite;
+        padding: 20px 30px;
+        width: 100%;
+        background-color: #000000d4;
+        h3, p {
+            font-size: 1.5rem;
+            color: white;
+        }
+        h3 {
+            font-size: 2rem;
+            color: greenyellow;
+            font-weight: bold;
+        }
+        
+    }
+
+    @media(max-width: 800px) {
+        .title {
+            h3, p {
+                font-size: 1.2rem;
+            }
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    @media(max-width: 500px) {
+        .title {
+            padding:15px;
+            h3, p {
+                font-size: .8rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+        }
+    }
+    @media(max-width: 350px) {
+        .title {
+            padding: 5px 15px;
+            h3, p {
+                font-size: .8rem;
+            }
+            h3 {
+                font-size: .9rem;
+            }
+        }
     }
     
 `
