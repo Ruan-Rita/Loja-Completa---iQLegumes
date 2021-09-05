@@ -4,6 +4,7 @@ import './global-styles.css';
 import Layout from './components/Layout';
 import HeaderBar from './components/HeaderBar';
 import Content from './components/Content';
+import Footer from './components/Footer';
 const App : React.FC = () => {
   return (
       <Layout>
@@ -14,6 +15,7 @@ const App : React.FC = () => {
           <Routes />
         </Content>
 
+        <Footer />
       </Layout>
   );
 }

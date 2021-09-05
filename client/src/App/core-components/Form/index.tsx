@@ -1,11 +1,16 @@
 import React from "react";
-import { Button } from "./styles";
+import { Formulary } from "./styles";
 
-const Form : React.FC = (props) =>{
+interface IForm{
+    action: string,
+    method: string,
+
+}
+const Form : React.FC<IForm> = (props) =>{
     return(
-        <Button>
+        <Formulary action={props.action} method={props.method}>
             {props.children}
-        </Button>
+        </Formulary>
     );
 } 
 export default Form;

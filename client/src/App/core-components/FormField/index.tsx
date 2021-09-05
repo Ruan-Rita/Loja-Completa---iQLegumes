@@ -1,11 +1,24 @@
 import React from "react";
-import { Button } from "./styles";
+import { Container } from "./styles";
 
-const FormField : React.FC = (props) =>{
+interface IFormField{
+    title?: string,
+    placeholder?: string,
+    value?: string,
+    type: string,
+    required: Boolean
+}
+
+const FormField : React.FC<IFormField> = (props) =>{
+   
+
     return(
-        <Button>
-            {props.children}
-        </Button>
+        <Container>
+            {props.title && (
+                <label>{props.title}</label>
+            )}
+            <input type={props.type} value={props.value} placeholder={props.placeholder}/>
+        </Container>
     );
 } 
 export default FormField;

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.nav`
     width: 100%;
-    background-color: #44883c;
+    background-color: #23323B;
     ul {
         max-width: 1000px;
         list-style: none;

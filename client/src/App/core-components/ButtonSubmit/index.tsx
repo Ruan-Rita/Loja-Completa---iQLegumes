@@ -1,9 +1,13 @@
 import React from "react";
 import { Button } from "./styles";
 
-const ButtonSubmit : React.FC = (props) =>{
+interface IButton{
+    type: string,
+}
+
+const ButtonSubmit : React.FC<IButton> = (props) =>{
     return(
-        <Button>
+        <Button >
             {props.children}
         </Button>
     );
