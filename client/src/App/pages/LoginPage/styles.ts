@@ -7,7 +7,7 @@ export const Container = styled.div`
     /* margin-top: 50%; */
     /* transform: translate(0, -50%); */
 `
-export const Signup = styled.div`
+export const Login = styled.div`
     max-width: 700px;
     padding: 30px;
     margin: 0px auto;
